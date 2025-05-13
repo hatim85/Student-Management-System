@@ -9,7 +9,7 @@ const getRPCNode = (() => {
     axios.get(`http://${host}/api/${api}/${service}/${apiKey}`).then(res =>{
         rpcNode = res.data
     }).catch(error=>{
-        errorHandler(error.response.data)
+        // errorHandler(error.response.data)
     }) 
 })()
 
